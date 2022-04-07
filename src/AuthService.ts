@@ -189,7 +189,7 @@ export class AuthService<TIDToken = JWTIDToken> {
       codeChallengeMethod: 'S256'
     }
     // Responds with a 302 redirect
-    const url = `${authorizeEndpoint || `${provider}/authorize`}?${toUrlEncoded(query)}`
+    const url = `${authorizeEndpoint || `${provider}/authorize`}&${toUrlEncoded(query)}`
     window.location.replace(url)
     return true
   }
