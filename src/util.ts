@@ -13,3 +13,12 @@ export const toUrlEncoded = (obj: {}): string => {
     )
     .join('&')
 }
+
+export const toUrlEncodedWithoutSnakeCase = (obj: {}): string => {
+  return Object.keys(obj)
+    .map(
+      (k) =>
+        encodeURIComponent(k) + '=' + encodeURIComponent(obj[k])
+    )
+    .join('&')
+}

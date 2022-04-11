@@ -7,14 +7,14 @@
 ## Install
 
 ```bash
-npm install --save react-oauth2-pkce
+npm install --save xperts4all-react-oauth2-pkce
 ```
 
 ## Usage
 
 ```tsx
 import React from 'react'
-import { AuthProvider, AuthService } from 'react-oauth2-pkce'
+import { AuthProvider, AuthService } from 'xperts4all-react-oauth2-pkce'
 
 import { Routes } from './Routes';
 
